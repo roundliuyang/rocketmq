@@ -733,6 +733,7 @@ public abstract class RebalanceImpl {
                 }
             }
 
+            // 把请求放进阻塞队列中
             this.dispatchPopPullRequest(popRequestList, 500);
         }
 
